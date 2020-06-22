@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Nested tables in html </title>
+	</head>
+	<body>
+		<table border = "1" width = '800' cellspacing = "5" cellpadding= "5" >        <!-- height is not cumpulsory to use.-->
+			<thead>
+				<tr>
+					<th rowspan = "3"> Head </th>
+					<th> No.s </th>
+					<th colspan = "4"> Info </th>     <!-- colspan is used to cover the no of columns we want. -->
+				</tr>
+				<tr>          <!-- tr is a table row and th is a table heading  -->
+					<th>S.no</th>
+					<th>Name</th>
+					<th>Father Name</th>
+					<th>Contact no.</th>
+					<th>Email id</th>
+				</tr>			
+			</thead>         <!-- thead is a table head  -->
+			
+			
+			<tbody>
+				<tr> 				<!-- td is a table data and th is a table heading  -->
+					<td rowspan = "3"> Data</td>
+					<td>1.</td>
+					<td>Sonam Jha</td>
+					<td>Madan Jha</td>
+					<td>
+						<table border = "1">     <!-- this the nesting table eg. -->
+							<tr> 
+								<td> 4656512153</td>
+								<td> 4651131553</td>
+								<td> 5548521455</td>
+							</tr>
+							<tr> 
+								<td> 4656512153</td>
+								<td> 4651131553</td>
+								<td> 5548521455</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>2.</td>
+					<td>XYZ</td>
+					<td>abc</td>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>515114561</td>
+                                <td>515115541</td>
+                                <td>515224511</td>
+                            
+                            </tr>
+                        </table>
+                    </td>
+					
+					<td>xyz24@gmail.com</td>
+				</tr>
+				
+				<tr>
+					<td>3.</td>
+					<td>John williamsons</td>
+					<td>Darrick williamsons</td>
+					<td>5124851455</td>
+					<td>john.2898@gmail.com</td>
+				</tr>
+			
+			</tbody>         <!-- tbody is a table body  -->
+		
+		</table>
+	</body>
+</html>
