@@ -1,0 +1,18 @@
+#rad1{
+    height: 150px;
+    width: 200px;
+    background-color: red; /*For browsers that do not support gradients*/
+    background-image: radial-gradient(red, yellow, green);
+}
+#rad2{
+    height: 150px;
+    width: 200px;
+    background-color: red; /*For browsers that do not support gradients*/
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+#rad3{
+    height: 150px;
+    width: 200px;
+    background-color: red; /*For browsers that do not support gradients*/
+    background-image: radial-gradient(circle, red, yellow, green);
+}

@@ -1,0 +1,183 @@
+CSS Points :
+---------------------------
+CSS Text Property
+==================
+1. Text color =>
+        color
+        background-color 
+2. Text Alignment =>
+        text-align : - center, left, right, justify.
+        vertical-align :- top, bottom, middle.
+        direction :- rtl.
+        unicode-bidi :- bidi-override.
+3. Text Decoration=>
+        text-decoration :- none, underline, line through, over line.
+4. Text Transformation =>
+        text-transform :- uppercase, lowercase, capatilize.
+5. Text Spacing =>
+        text-indent
+        letter-spacing
+        word-spacing
+        line-height
+6. Text Shadow =>
+        text-shadow. 
+----------------------------------------------------------------------------------------
+CSS Links Property 
+==========================
+  a: link  => normal, unvisited link
+  a: visited => user has visited
+  a: hover => user mouses over it
+  a: active => moment it is clicked.
+-----------------------------------------------------------------------------------------
+CSS Lists Property
+===========================
+    list-style-type :- circle, square, upper-roman, etc..
+    list-style-image :- we can put image for lists.
+    list-style-position :- outside, inside.
+-----------------------------------------------------------------------------------------
+CSS Display Property
+===========================
+    display: none
+    display: inline
+    display: block
+    visibility: hidden
+----------------------------------------------------------------------------------------
+CSS Position Property
+============================
+     postion:static
+     postion:relative
+     postion:fixed
+     postion:absolute
+     postion:sticky
+ ----------------------------------------------------------------------------------------
+CSS Workflow
+============================
+    overflow: visible
+    overflow: hidden
+    overflow: scroll
+    overflow: auto
+------------------------------------------------------------------------------------------
+CSS Float and Clear
+============================
+     float: left
+     float: right
+     float: none
+     float: inherit
+     clear: none
+     clear: left
+     clear: right
+     clear: both
+     clear: inherit
+------------------------------------------------------------------------------------------
+CSS Selectors 
+=============================
+1. Simple Selector
+2. Combinator Selector
+3. Pseudo class 
+4. Pseudo elements
+-------------------------------------------------------------------------
+Combinators selector=>
+  i. descendant selector(space)
+ ii. child selector(>)
+ iii. adjacent sibling selector(+)
+ iv. general sibling selector(~)
+--------------------------------------------------------------------------
+Pseudo Class =>
+selector:pseudo-class {
+  property: value;
+}
+---------------------------------------------------------------------------
+Pseudo Elements =>
+selector::pseudo-element {
+  property: value;
+}
+------------------------------------------------------------------------------
+CSS Attribute Selector
+========================
+    [attribute='value']
+    [attribute~='value']
+    [attribute|='value']
+    [attribute^='value']
+    [attribute$='value']
+    [attribute*='value']
+--------------------------------------------------------------------------------------
+CSS Counters
+==========================
+    counter-reset
+    counter-increment
+    content
+    counter() or counters()
+--------------------------------------------------------------------------------------
+CSS Units.
+===========================
+    Two types of length units:- absolute & relative.
+---------------------------------------------------------------------------------------
+Rounded Corners
+============================
+    border-radius
+-----------------------------------------------------------------------------------------
+Backgrounds
+=============================
+   background-image
+   background-size : contain , cover
+   background-origin : context-box, border-box, padding-box
+   background-clip : context-box, border-box, padding-box
+-----------------------------------------------------------------------------------------
+Gradients
+==============================
+    -- Linear Gradients(goes up,down,left,right,diagonally
+ Syntax: 
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+---------------------------------------------------------------------------------------------------------------
+CSS Shadow Effects
+===============================
+ 1. text-shadow
+ 2. box- shadow
+------------------------------------------------------------------------------------------
+CSS Text Effects
+================================
+   1. text-overflow
+   2. word-wrap
+   3. word-break
+   4. writing-mode
+------------------------------------------------------------------------------------------
+CSS 2D Transform Methods
+================================
+  transform:translate()
+  transform:rotate() -- it takes angle values
+  transform:scaleX()
+  transform:scaleY()
+  transform:skewX()-- it takes angle values
+  transform:skewY() -- it takes angle values
+  transform:skew()-- it takes angle values
+  transform:matrix()  -- it takes above six parameters.
+------------------------------------------------------------------------------------------
+CSS 3D Transforms Mathods
+================================
+  rotateX()
+  rotateY()
+  rotateZ()
+------------------------------------------------------------------------------------------
+CSS Transitions
+================================
+  transition
+  transition-delay
+  transition-duration
+  transition-property
+  transition-timing-function : ease, linear, ease-in, ease-out, ease-in-out,
+       cubic-bezier(n,n,n,n)
+------------------------------------------------------------------------------------------
+CSS Animations
+================================
+   @keyframes
+   animation-name:
+   animation-duration:
+   animation-delay:
+   animation-iteration-count:
+   animation-direction:
+   animation-timing-function:
+   animation-fill-mode:
+   animation:
+
+
+

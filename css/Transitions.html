@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Transition Effects</title>
+        <meta charset="utf-8">
+        <style>
+        /*    div{
+                width: 100px;
+                height: 100px;
+                background: slateblue;
+                transition: width 2s/*, height 4s;
+            }
+            #div1{transition-timing-function: linear;
+            }
+            #div1{transition-timing-function: ease;
+            }
+            #div1{transition-timing-function: ease-in;
+            }
+            #div1{transition-timing-function: ease-out;
+            }
+            #div1{transition-timing-function: ease-in-out;
+            } 
+            */
+            #tt{
+                width: 100px;
+                height: 100px;
+                background: yellow;
+                transition: width 2s, height 2s, transform 2s;
+            }
+            #tt:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotate(180deg);
+            }
+         /*   div:hover{
+                width: 300px;
+             /*   height: 300px;  for first property
+            } */
+        </style>
+    </head>
+    <body>
+        <h1>The Transition Property</h1>
+        <p>Hover over the div element to see the transition effect: </p>
+        <div></div>
+        <h1>The Transition Property</h1>
+        <p>Hover over the div element to see the transition effect: </p>
+        <div id="div1">Linear</div><br/>
+        <div id="div2">Ease</div>     <br/>   
+        <div id="div3">Eaes-in</div><br/>
+        <div id="div1">Ease-out</div><br/>
+        <div id="div1">Ease-in-out</div><br/>
+        <h1>Transition + Transform</h1>
+        <p> Hover over the div element below:</p>
+        <div id="tt"></div>
+
+    </body>
+</html>

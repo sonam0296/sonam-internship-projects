@@ -1,0 +1,11 @@
+body{
+    background-color: hsla(240, 50%, 76%, 0.5);
+    opacity: 0.5;
+    background-image: url("bgdesert.jpg");
+}
+h1{
+    text-align: center;
+    color: navy;
+}
+
+/*This is css external file and it is the comment*/

@@ -1,0 +1,49 @@
+#rborder1{
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#rborder2{
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#rborder3{
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#rborder4{
+    border-radius: 15px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#eborder1{
+    border-radius: 50px / 15px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#eborder2{
+    border-radius: 15px / 50px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+#eborder3{
+    border-radius: 50%;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
