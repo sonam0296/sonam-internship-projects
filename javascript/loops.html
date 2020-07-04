@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>Loops in Array</h1>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var fruits, text, i, fLen;
+            
+            fruits = ["mango", "banana", "apple", "orange"];
+            fLen = fruits.length;
+            
+            text = "<ul>";
+            for(i=0; i<=fLen; i++){
+                text += "<li>" + fruits[i] + "</li>";
+            }
+            text += "</ul>"
+            
+            document.getElementById("demo").innerHTML= text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>Javascript Arrays</h1>
+        <p>Array Sorting method</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits;
+            
+            function myFunction(){
+                fruits.sort();
+                fruits.reverse();
+                document.getElementById("demo").innerHTML = fruits;
+            }
+        </script>
+    </body>
+</html>

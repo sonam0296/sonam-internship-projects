@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JavaScript <i>this</i> Keywords</h1>
+        <p>Because the person object "owns" the fullName method.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var person = {
+                firstName: "Sonam",
+                lastName: "Jha",
+                id: 5566,
+                fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+            };
+            document.getElementById("demo").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>String Properties</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>JavaScript String Properties</h1>
+        <p>The length property returns length of a string.</p>
+        
+        <p id="demo"></p>
+        <script>
+            var txt = "asdfghjkkllloiihcbhvec";
+            var str = "indexOf property locates the word.";
+            var x = str.indexOf("locates");
+            var y = str.lastIndexOf("jha");
+            
+            // Extracting string parts
+            
+            var a  = "apple, banana, mango, kiwi";
+            var res = a.slice(9, 15);
+            document.getElementById("demo").innerHTML = txt.length + "<br>" + x + "<br>" + y +"<br>" + res;
+        </script>
+    </body>
+</html>

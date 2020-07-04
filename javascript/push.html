@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JavaScript Elements</h1>
+        
+        <p>Adding Elements in the array</p>
+        
+        <button onclick = "myFunction()">Try It</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var  cars = ["skoda", "fiat", "jaguar", "volsvagen"];
+            document.getElementById("demo").innerHTML = cars;
+   
+// instead of using push we can use cars[cars.length] to add a new element.    
+            function myFunction(){
+                cars.push("TATA");
+                document.getElementById("demo").innerHTML = cars;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JS Error Handling</h1>
+        <p>Please input the value between 5 and 10 :</p>
+        
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()">Test I/p</button>
+        <p id="p01"></p>
+        <script>
+            function myFunction(){
+                var message, x;
+                message = document.getElementById("p01");
+                message.innerHTML = "";
+                x = document.getElementById("demo").value;
+                try{
+                    if(x =="") throw "is empty";
+                    if(isNaN(x)) throw "is not a number";
+                    x = Number(x);
+                    if(x > 10) throw "is too high";
+                    if(x < 5) throw "is too low";
+                }
+                catch (err){
+                    message.innerHTML = "Input " + err;
+                }
+                finally {
+                    document.getElementById("demo").value = "";
+                }
+            }
+        </script>
+    </body>
+</html>

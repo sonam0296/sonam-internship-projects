@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JavaScript Date</h1>
+        
+        <p>Date.parse() returns the number of milliseconds between the date and January 1, 1970 :</p>
+        
+        <p>We can convert the milisec string to a date object :</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var millisec = Date.parse("July 02, 2020");
+            
+            var d = new Date(millisec);
+            document.getElementById("demo").innerHTML = d;
+        </script>
+    </body>
+</html>

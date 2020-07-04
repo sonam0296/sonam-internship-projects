@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JavaScript Error Handling</h1>
+        
+        <p>This example shows how to use <b>try</b> and <b>catch</b> to display error.</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            try{
+                adddlert("heyy!!");
+            }
+            catch(err){
+                document.getElementById("demo").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>

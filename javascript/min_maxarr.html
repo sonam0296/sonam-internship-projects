@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JavaScript Array Sort</h1>
+        
+        <p>The highest number is : <span id="demo"></span></p>
+        
+        <script>
+            var num = [40, 50, 10, 12, 3];
+            document.getElementById("demo").innerHTML = myArrayMax(num);
+            
+            function myArrayMax(arr){
+                var len = arr.length;
+                var max = -Infinity;   // var min = Infinity;
+                while (len --){
+                    if (arr[len] > max){    // <
+                        max = arr[len];     // min 
+                    }
+                }
+                return max;
+            }
+        </script>
+    </body>
+</html>

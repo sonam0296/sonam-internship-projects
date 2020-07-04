@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>JS Arrays</h1>
+        
+        <p>Using splice to add items to array.</p>
+        
+        <button onclick="myFunction()">Try It</button>
+        
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        
+        <script>
+            var fruits = ["Banana", "Mango", "Apple", "Orange"];
+            
+            document.getElementById("demo1").innerHTML = "Original Array:<br>" + fruits;
+  // 2 is used at which index to add and 0 is used how many elements to be deleted.          
+            function myFunction(){
+                fruits.splice(2, 0, "Lemon", "Kiwi");
+                document.getElementById("demo2").innerHTML =  "New Array:<br>" + fruits;
+            }
+        </script>
+    </body>
+</html>
