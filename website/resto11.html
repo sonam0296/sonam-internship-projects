@@ -1,0 +1,394 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       html {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 900;
+            font-size: 10px;
+            color: var(--black);
+            text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07)
+        } 
+
+        /* *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        } 
+
+         *{
+                box-sizing: border-box;
+            }*/
+        
+/************* Section 1 ****************/
+/************* START HERE ****************/
+        .section-1 {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            margin-left: 45px;
+        }
+        .top-menu-container {
+            overflow: hidden;
+            
+            text-align: center;
+            margin-top: 50px;
+            display: block;
+            
+        }
+
+        .top-menu-item {
+            font-size: 20px;
+            float: left;
+            width: 243px;
+            text-align: center;
+            background-color: #FFC600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-left: 
+
+        }
+/*************END HERE *****************/
+        
+/************* Section 2 ****************/
+/************* START HERE ****************/
+        .section-2 {
+            overflow: hidden;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .banner{
+            background: url(img/tacos.jpg);
+            background-size: cover;
+         /*   grid-area: banner;*/
+            width: 60%;
+            height: 400px;
+            background-color: white; 
+            float: left;
+            align-items: start;
+            justify-content: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+        
+        
+        .rate-card-stack {
+             
+            width: 35%; 
+            float: left;
+        }
+        .rate-card-top {
+            margin-left: 20px;
+            height: 210px; 
+            margin-bottom: 10px; 
+            overflow: hidden;
+        }
+
+        .rate-card-bottom{
+             
+            height: 210px; 
+            margin-top: 20px; 
+            margin-left: 20px;
+            overflow: hidden;
+        }
+        .rate-card-bottom-inside{
+            background-color: #FFC604; 
+            height: 200px;
+            margin: 5px;
+            text-align: center;
+            font-size: 20px;
+           display: grid;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+        }
+        .rate-card-top-inside {
+            background-color: #FFC604; 
+            height: 200px;
+            margin: 5px;
+            text-align: center;
+            font-size: 20px; 
+         display: grid;
+            justify-items: center;
+            align-content: center;
+            align-items: center;    
+        }
+        }
+/*************** END HERE ****************/
+
+ /************* Section 3 ****************/
+/************* START HERE ****************/
+        .section-3 
+        {
+           overflow: hidden;
+            
+            padding: 10px;
+            height: 100px;
+            margin-left: 15px;
+           /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            
+        }
+      /*  .icon{
+            margin-top: 20px;*/
+        }
+        .card-item {
+            
+            background-color: white;
+            text-align: center;
+            float: left;
+            width: 280px;
+            margin-left: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            height: 175px;
+        }
+      .card-item-inner {
+            width: 100%;
+            height: 200px;
+            float: left;
+            justify-items: center;
+        }
+    
+/************* END HERE ****************/
+
+
+/************Section 4***************/
+/************START HERE***************/
+        .section-4{
+            background-color: white;
+            margin-left: 35px; 
+            margin-top: 50px;
+            padding: 50px;
+            float: left;
+            width: 1160px;
+            /*width: 100%;
+            margin-bottom: 80px;
+            overflow: hidden;*/
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            align-items: center;
+        }
+        .taco-detail{
+            
+            height: 300px;
+            width: 70%;
+            margin-top: 100px;
+        }
+/**********END HERE**************/
+    
+/************Section 5***************/
+/************START HERE***************/
+        .section-5{
+            width: 100%;
+            height: 500px;
+            float: left; 
+            margin-top: 20px;  
+            
+        }   
+       
+        .gallery{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin: 30px;
+            padding-right: 15px;
+            
+        }
+        body {
+            background-image: url("topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+            background-size: 340px, auto;
+            min-height: calc(100vh - 100px);
+            margin: 50px;
+
+            background-attachment: scroll;
+            background-attachment: fixed;
+            letter-spacing: -1px;
+        }
+
+        @media only screen and (max-width: 685px){
+            .banner{
+                width: 100%; 
+            height: 400px; 
+            background-color: white; 
+            float: left;
+        }
+
+        .rate-card-stack {
+            background-color: green; 
+            width: 100%; 
+            float: left;
+        }
+        .rate-card-top {
+            background-color: yellow; 
+            height: 190px; 
+            float : left;
+            width: 50%;
+            margin: 0px;
+        }
+        
+        .rate-card-bottom{
+            background-color: pink; 
+            height: 190px; 
+            width: 50%;
+            float : left;
+            margin: 0px;
+        }
+        
+        .rate-card-bottom-inside{
+            background-color: rgb(25, 131, 192); 
+            height: 180px;
+            margin: 5px;
+        }
+        .rate-card-top-inside {
+            background-color: rgb(25, 131, 192); 
+            height: 180px;
+            margin: 5px;
+            
+        }
+        .section-1{
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                margin-left: 60px;
+            }
+            @media only screen and (max-width:800px){
+                .section-4{
+                    grid-template-columns: 1fr;
+                    padding: 0px;
+                }
+            }
+            @media only screen and (max-width:1290px){
+                .card-item{
+                float: left;
+                padding: 10px;
+            }
+                @media only screen and (max-width:600px){
+                    .gallery{
+                        float: left;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+    </style>
+
+
+</head>
+
+<body style="margin:0px; padding:0px;">
+
+    
+    <div class="section-1">
+        <div class="top-menu-container">
+            <div class="top-menu-item">TACOS</div>
+            <div class="top-menu-item">BEERS</div>
+            <div class="top-menu-item">WINES</div>
+            <div class="top-menu-item">DESSERTS</div>
+            <div class="top-menu-item">RESERVATIONS</div>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div class="banner">
+            <h1 style="background-color:#FFC604; padding: 5px;
+    font-size: 30px; margin-left: 30px;">Terry's Taco Joint</h1>
+            <p style="background-color:#FFC604;padding: 5px;
+    font-size: 20px; margin-left: 30px;">Pretty Good Tacos!</p>
+        </div>
+        <div class="rate-card-stack"> 
+            <div class="rate-card-top">
+                <div class="rate-card-top-inside">
+                    <p style="font-size: 30px;margin-block-end : 0rem !important;margin-block-start : 0rem !important">$1.99</p>
+                    <p style="margin-block-end : 0rem !important;margin-block-start : 0rem !important">Tacos</p>
+                </div>
+
+            </div>
+            <div class="rate-card-bottom">
+                <div class="rate-card-bottom-inside">
+                    <p  style="font-size: 30px;margin-block-end : 0rem !important;margin-block-start : 0rem !important">$3.99</p>
+                    <p style="margin-block-end : 0rem !important;margin-block-start : 0rem !important">Kombucha</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-3" style="margin-left: 20px;">
+        <div class="card-item">
+            <div class="card-item-inner">
+                <span><img src="img/taco.png" width="50px" height="50px" class="icon"></span>
+                <h3 style="font-size: 20px">Tacos</h3>
+                <p style="font-size: 15px; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-inner">
+                <span><img src="img/cheers.png" width="50px" height="50px" class="icon"></span>
+                <h3 style="font-size: 20px">Beers</h3>
+                <p style="font-size: 15px; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-inner">
+                <span><img src="img/wine.png" width="50px" height="50px" class="icon"></span>
+                <h3 style="font-size: 20px">Wines</h3>
+                <p style="font-size: 15px; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-inner">
+                <span><img src="img/music-note.png" width="50px" height="50px" class="icon"></span>
+                <h3 style="font-size: 20px">Music</h3>
+                <p style="font-size: 15px; font-weight: 600;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-4">
+        <img src="img/queso-taco.png" alt="Tacos" width="100%">
+        <div class="taco-detail">
+            <h2 style="font-weight: bold; font-size: 30px;">Featured Tacos</h2>
+            <p style="font-size: 20px; font-weight: bold">Slim Profile, easy to hold and loaded with cheese.</p>
+            <p style="font-size: 20px; font-weight: bold">This is the one you have been waiting for</p>
+            <button style="background-color: #FFC604">Learn More -></button>
+        </div>
+    </div>
+    <div class="section-5">
+        <div style="display: table;width: 100%;table-layout: fixed;border-spacing: 10px;">
+            <div
+                style="width: 45%; display: table-cell;background-image: linear-gradient(to right, transparent , #ffc600);">
+                <div style="height: 2px; display: table-cell;background-image: linear-gradient(to right, transparent , #ffc600);"></div>
+            </div>
+            <div style="text-align: center;">
+                <h2>Instant Grams</h2>
+            </div>
+            <div
+                style="width: 45%;display: table-cell;background-image: linear-gradient(to right, #ffc600 , transparent);">
+            </div>
+        </div>
+     <div class="gallery">
+        <img src="img/art.jpg" alt="Art" width="250" height="250">
+        <img src="img/building.jpg" alt="Art" width="250" height="250">
+        <img src="img/car.jpg" alt="Art" width="250" height="250">
+        <img src="img/restaurant.jpg" alt="Art" width="250" height="250">
+        <img src="img/eye.jpg" alt="Art" width="250" height="250">
+        <img src="img/party.jpeg" alt="Art" width="250" height="250">
+        <img src="img/photo-1591100585965-2b3ccaa9f689.jpg" alt="Art" width="250" height="250">
+        <img src="img/garden-rest.jpg" alt="Art" width="250" height="250">
+        <img src="img/food.jpg" alt="Art" width="250" height="250">
+        <img src="img/parking.jpg" alt="Art" width="250" height="250">
+    </div>
+    
+    
+</body>
+
+</html>
