@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pagination</title>
+        <meta charset="utf-8">
+        <style>
+            .center{
+                text-align: center;
+            }
+            .pagination{
+                display: inline-block;
+            }
+            .pagination a{
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                border: 1px solid #ddd;
+                margin: 0 4px;
+                text-decoration: none;
+            }
+            .pagination a.active{
+                background-color: #4CAF50;
+                color: aliceblue;
+                border-radius: 5px;
+            }
+            .pagination a:hover:not(active){
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pagination in CSS</h1>
+        <h2>Rounded Active and Hover Buttons</h2>
+        <div class="center">
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+Bootstrap's Default Settings 
+=========================
+    font-size =14px
+ <code> tag :-
+Its is used to embed the letters in a code .
+<kbd> tag :-
+its a keyboard tag 
+-----------------------------------------------------------------------------------------
+Bootstrap Table :-
+==================
+   1. Simple table => the class should be .table
+   2. Striped Rows => table-striped class
+   3. Bordered table => table-bordered class
+   4. Hover rows => table-hover class
+   5. Condensed table => table-condensed class
+------------------------------------------------------------------------------------------
+Bootstrap Images :-
+==================
+   1. Rounded-Corners => class = img-rounded
+   2. circle => class= img-circle
+   3. thumbnail => class= img-thumbnail
+   4. reponsive image => class= img-responsive
+   5. Responsive embed => class= embed-responsive-item to an
+	<iframe> tag.
+-------------------------------------------------------------------------------------------
+Bootstrap Buttons
+==================
+   1.) .btn
+   2.) .btn-default
+   3.) .btn-primary
+   4.) .btn-success
+   5.) .btn-info
+   6.) .btn-warning
+   7.) .btn-danger
+   8.) .btn-link
+---------------------------------------------------------
+ Button Sizes =>
+     1.) class= btn-lg
+     2.) class= btn-sm
+     3.) class= btn-xs
+---------------------------------------------------------
+For block-level buttons =>
+     class= btn-block
+---------------------------------------------------------
+For active/disabled buttons =>
+     class = btn btn-primary active
+     class = btn btn-primary disabled
+------------------------------------------------------------------------------------------
+Bootstrap Badges & Labels
+==========================
+     Use the .badge class within the <span> tag
+     use .label class within <span> tag
+------------------------------------------------------------------------------------------
+Bootstrap Progress bars 
+==========================
+      .progress-bar class within <div> tag plus the aria-value 
+---------------------------------------------------------------------------------------
+   1. Colored Progress bar =>
+	.progress-bar-success/info/warning/danger
+   2. Striped Progress bar =>
+	.progress-bar-striped
+<div class= "progress-bar progress-bar-success progress-bar-striped">
+   3. Animated Progress bar =>
+	.active is used
+<div class="progress-bar progress-bar-striped active">
+----------------------------------------------------------------------------------------------------
+Bootstrap  Pagination
+=====================
+    1. Basic Pagination =>
+	.pagination class with in the <ul> tag
+    2. Active Pagination =>
+	.active class in <li> tag
+    3. Disabled Pagination =>
+	.disable class in <li> tag
+    4. Pagination Sizing =>
+	.pagination pagination-lg(for large) class within <ul>tag
+	.pagination pagination-sm(for small) class within <ul>tag
+    5. Breadcrumbs =>
+	.breadcrumb class within <ul> tag
+-------------------------------------------------------------------------------------------
+Bootstrap Tabs and Pills 
+======================
+     1. <ul class="list-inline">
+     2. <ul class="nav nav-tabs">
+     3. <ul class="nav nav-pills">
+--------------------------------------------------------------------------------------------
+Bootstrap Forms 
+======================
+    1. Basic Form =>  No need of adding anything
+    2. Inline form => <form class="form-inline">
+    3. Horizontal Form => 
+	Add class .form-horizontal to the <form> element
+	Add class .control-label to all <label> elements
+-------------------------------------------------------------------------------------------
+Bootstrap Form controls =>
+    1. input
+    2. checkbox
+    3. textarea
+    4. radio
+    5. select
+--------------------------------------------------------------------------------------------
+Bootstrap Grid
+======================
+   1. Extra-small Screen => .cols-xs
+   2. Small Screen => .col-sm
+   3. Medium Screen => .col-md
+   4. Large Screen => .col-lg
+-------------------------------------------------------------------------------------------------
+   => Horizontal & Stacked :-  col-sm-6    col-sm-6
+   => Small Grid :-  col-sm-3 / 9   or  col-sm-4 / 8
+   => Medium Grid :-  col-md-6 / 6
+   => Large Grid :-  col-lg-6 / 6
