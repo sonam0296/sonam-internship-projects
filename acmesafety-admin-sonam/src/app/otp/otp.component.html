@@ -1,0 +1,36 @@
+<div class="login-box">
+    <div class="login-box-body">
+        <div class="login-logo">
+            <b>LOGO </b> Title
+        </div>
+        <form class="form-horizontal" [formGroup]="customForm" (ngSubmit)="onSubmit()">
+            <div class="card-body">
+                <h2 class="center">OTP sent to your Email ID</h2>
+                <div class="form-group row">
+                    <label for="otp" class="col-sm-3 col-form-label">OTP</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="otp" id="otp" 
+                        formControlName="otp"  required>
+                    </div>
+                </div>
+                <div class="form-group" *ngIf="isError">
+                    <p class="alert alert-danger">
+                        <strong>{{message}}</strong> </p>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer center">
+                <button class="btn btn-info" type="submit">
+                    <i class="fa fa-refresh fa-spin" *ngIf="isLoading"></i>
+                    SUBMIT</button>
+                <button type="button" class="btn btn-danger" (click)="customForm.reset()">RESET</button>
+            </div>
+            <div class="card-footer center">
+                <a (click)="generateOTP()"> <i class="fa fa-refresh fa-spin" *ngIf="isResendOTPLoading"></i>Resent OTP</a>
+            </div>
+            <!-- /.card-footer -->
+        </form>
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->

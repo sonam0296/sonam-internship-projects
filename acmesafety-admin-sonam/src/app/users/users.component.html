@@ -1,0 +1,139 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Users
+        <div class="pull-right"><a routerLink="/users/add" class="btn btn-success btn-xs">New</a></div>
+    </h1>
+</section>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">List</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <div *ngIf="loading ">
+                        <div class="overlay">
+                            <i class="fa fa-refresh fa-spin"></i>
+                        </div>
+                    </div>
+                    <p class="alert alert-success text-center" *ngIf="isSuccess">
+                        <strong>{{message}}</strong> </p>
+                    <p class="alert alert-danger text-center" *ngIf="isError">
+                        <strong>{{message}}</strong> </p>
+                    <table class="table table-hover">
+
+
+
+                        <!--      MAT table start here-->
+                        <div class="example-header">
+                            <!-- <mat-form-field>
+                                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+                            </mat-form-field> -->
+                            <mat-form-field>
+                                <input matInput placeholder="Search Users" #input>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="example-container mat-elevation-z8">
+
+                            <mat-table [dataSource]="userDataSource" matSort matSortActive="id" matSortDirection="asc"
+                            matSortDisableClear>
+                                <!-- ID Column -->
+                                <ng-container matColumnDef="id">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white; border-width: 5px; border-color: white;">
+                                        Id </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+                                </ng-container>
+                                <!-- First Name -->
+                                <ng-container matColumnDef="username">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white; border-width: 5px; border-color: white;">
+                                        Username </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.length !== 'undefined' ? row.username : ""}}
+                                    </mat-cell>
+                                </ng-container>
+
+                                <!-- Progress Column -->
+                                <ng-container matColumnDef="first_name">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        First Name </mat-header-cell>
+                                    <mat-cell *matCellDef="let row">
+                                        {{row.length !== 'undefined' ? row.first_name : ""}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="last_name">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        Last Name </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.length !== 'undefined' ? row.last_name : ""}}
+                                    </mat-cell>
+                                </ng-container>
+
+                                <!-- Name Column -->
+                                <ng-container matColumnDef="email">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        Email </mat-header-cell>
+                                    <mat-cell *matCellDef="let row">
+                                        {{ row.length !== 'undefined' ?  row.email : "No Email" }} </mat-cell>
+                                </ng-container>
+
+                                <!-- Color Column -->
+                                <ng-container matColumnDef="mobile">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        Mobile </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.length !== 'undefined' ? row.mobile : ""}}
+                                    </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="user_status">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        User Status </mat-header-cell>
+                                    <mat-cell *matCellDef="let row">
+                                        {{row.user_status_id !== 'undefined' ? row.user_status.name : ""}} </mat-cell>
+                                </ng-container>
+
+
+                                <ng-container matColumnDef="action">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header
+                                        style="background-color: #0085cc; color: white;">
+                                        Action </mat-header-cell>
+                                    <mat-cell *matCellDef="let row; let userId = index"> &nbsp;&nbsp;&nbsp;
+
+                                        <a [routerLink]="['/home/users/view/', row.id]"
+                                            class="btn btn-info btn-xs">View</a>&nbsp;
+                                        <a [routerLink]="['/home/users/edit/', row.id]"
+                                            class="btn btn-warning btn-xs">Edit</a>&nbsp;
+                                        <a (click)="deleteUser(row.id,userId)" class="btn btn-danger btn-xs">Delete</a>
+                                    </mat-cell>
+                                </ng-container>
+
+                                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                                <mat-row *matRowDef="let row; columns: displayedColumns;">
+                                </mat-row>
+                            </mat-table>
+
+                            <!-- <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator> -->
+                            <mat-paginator [length]="userDataSource.count" [pageSize]="3"
+                            [pageSizeOptions]="[3, 5, 10,20,50,100]"></mat-paginator>
+                        </div>
+
+                        <!--      MAT table end here -->
+                    </table>
+
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>

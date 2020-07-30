@@ -1,0 +1,47 @@
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->       
+  
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="active treeview menu-open">
+          <a routerLink="/home" class="active" >
+            <i class="fa fa-th active"></i> <span>Dashbord</span>
+          </a>        
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Users</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/home/users/add"><i class="fa fa-circle-o"></i> New</a></li>
+            <li><a routerLink="/home/users"><i class="fa fa-circle-o"></i> Existing</a></li>
+          </ul>
+        </li> 
+        <!-- <li class="active treeview menu-open">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Products</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/home/products/add"><i class="fa fa-circle-o"></i> New</a></li>
+            <li class="active"><a href="/home/products"><i class="fa fa-circle-o"></i> Existing</a></li>
+          </ul>
+        </li> -->
+        <li class="active treeview">
+          <a routerLink="/home/change-password" >
+            <i class="fa fa-th"></i> <span>Change Password</span>
+          </a>        
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>

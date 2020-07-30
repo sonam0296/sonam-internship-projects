@@ -1,0 +1,57 @@
+<section class="content-header">
+    <h1>
+      Product
+      <small>View</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a routerLink="/"><i class="fa fa-dashboard"></i> Home</a></li>
+    </ol>
+  </section>
+  
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-solid">
+          <div class="box-header with-border">
+            <i class="fa fa-info"></i>
+            <h3 class="box-title">Information</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="form-group" *ngIf="isError" class="alert alert-danger">
+              <strong>{{message}}</strong>
+            </div>
+            <dl *ngIf="product!= undefined" class="dl-horizontal">
+              <dt scope="row">Name</dt>
+              <dd>{{product.username}}</dd>
+  
+              <dt scope="row">First Name </dt>
+              <dd>{{product.first_name}}</dd>
+  
+              <dt scope="row">Last Name</dt>
+              <dd>{{product.last_name}}</dd>
+  
+              <dt scope="row">Email</dt>
+              <dd>{{product.email}}</dd>
+  
+              <dt scope="row">Mobile</dt>
+              <dd>{{product.mobile}}</dd>
+  
+              <dt scope="row">Active</dt>
+              <dd>{{product.active}}</dd>
+  
+  
+              <dt scope="row">Created</dt>
+              <dd>{{product.created}}</dd>
+  
+              <dt scope="row">Modified</dt>
+              <dd>{{product.modified}}</dd>
+  
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>

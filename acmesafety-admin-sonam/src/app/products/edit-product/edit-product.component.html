@@ -1,0 +1,85 @@
+<section class="content-header">
+    <h1>
+      Products
+      <small>Edit</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a routerLink="/"><i class="fa fa-dashboard"></i> Home</a></li>
+    </ol>
+  </section>
+  
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Form</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form [formGroup]="customForm" (ngSubmit)="onSubmit()">
+            <div class="box-body">
+              <div class="form-group" *ngIf="isSuccess">
+                <p class="alert alert-success">
+                  <strong>{{message}}</strong> </p>
+              </div>
+              <div class="form-group" *ngIf="isError">
+                <p class="alert alert-danger">
+                  <strong>{{message}}</strong> </p>
+                <!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
+              </div>
+  
+              <div class="row">
+                <div class="col-md-6" *ngFor="let data of formData">
+                  <div class="form-group input text required">
+                    <label class="control-label" for="{{data.for}}">{{data.label}}</label>
+                    <span *ngIf="data.required=='required'" style="color: red;">*</span>
+                    <input *ngIf="data.control=='input'" type="{{data.type}}" class="form-control" id="{{data.id}}"
+                      placeholder="{{data.placeholder}}" formControlName="{{data.control_name}}" />
+                    <select *ngIf="data.control=='select'" class="form-control" id="{{data.id}}"
+                      formControlName="{{data.control_name}}">
+                      <option *ngFor="let item of data.array" [value]="item.id">{{item.name}}</option>
+                    </select>
+                    <div style="margin-top: 8px;margin-bottom: 0px;"
+                      *ngIf="customForm.controls[data.control_name].invalid && (customForm.controls[data.control_name].dirty || customForm.controls[data.control_name].touched)"
+                      class="alert alert-danger">
+                      <div *ngIf="customForm.controls[data.control_name].errors.required">
+                        {{data.label}} is required.
+                      </div>
+                      <div *ngIf="customForm.controls[data.control_name].errors.minlength">
+                        {{data.label}} must be at least
+                        {{ customForm.controls[data.control_name].errors.minlength.requiredLength | json }}
+                        characters
+                        long.
+                      </div>
+                      <div *ngIf="customForm.controls[data.control_name].errors.maxlength">
+                        {{data.label}} must not exceed
+                        {{ customForm.controls[data.control_name].errors.maxlength.requiredLength | json }}
+                        characters.
+                      </div>
+                      <div *ngIf="customForm.controls[data.control_name].errors.email">
+                        Entered {{data.label}} is not valid.
+                      </div>
+                      <div *ngIf="customForm.controls[data.control_name].errors.pattern">
+                        Entered {{data.label}} is not valid.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- {{customForm.value | json}} -->
+            <div class="box-footer ">
+              <button type="submit" class="btn btn-success" [disabled]="!customForm.valid">
+                <i class="fa fa-refresh fa-spin" *ngIf="isLoading"></i>
+                Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.box -->
+      </div>
+    </div>
+    <!-- /.row -->
+  </section>

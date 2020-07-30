@@ -9,7 +9,7 @@ export class ShoppingListService{
         new Ingredient('Mangoes', 7)
       ];
     
-      getIngredients(){
+    getIngredients(){
           return this.ingredients.slice();
     }
     addIngredient(ingredient: Ingredient){
@@ -20,6 +20,7 @@ export class ShoppingListService{
         // for (let ingredient of ingredients){
         //     this.addIngredient(ingredient);
         // }
+        // ... is a ES6 features
         this.ingredients.push(...ingredients);
         this.ingredientsChanged.emit(this.ingredients.slice());
     }
