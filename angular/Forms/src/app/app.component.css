@@ -1,0 +1,6 @@
+.container{
+    padding-top: 50px !important;
+}
+input.ng-invalid.ng-touched {
+    border: 1px solid  red !important;
+}
