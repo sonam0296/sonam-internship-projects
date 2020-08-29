@@ -24,7 +24,6 @@ import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule } from "@ngrx/router-store";
 import { RecipeEffects } from "./recipes/store/recipe.effects";
-import { AuthModule } from "./auth/auth.module";
 
 @NgModule({
   declarations: [
