@@ -1,0 +1,15 @@
+<div>  
+  <div class="row">  
+    <div class="col-sm-12 btn btn-primary">  
+      Image Slider  
+    </div>  
+  </div>  
+</div>  
+<hr style="background-color:black" />  
+<div class="row">  
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+    <div ngxSlickItem *ngFor="let image of images" class="slide">  
+      <img src="{{ image.img }}" width="50%">  
+    </div>  
+  </ngx-slick-carousel>  
+</div>  

@@ -1,0 +1,166 @@
+<aside class="main-sidebar">
+  <section class="sidebar" >
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="treeview" style="padding-top:30px;" routerLinkActive="active">
+        <a routerLink="/home/dashboard" (click)="closeSideBar();">
+          <div class="icon">
+          <img src="../../../assets/img/menu/1.png" width="23px" height="20px">
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Dashboard</a>
+            </span>
+        </div>
+         
+        </a>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon">
+          <img src="../../../assets/img/menu/2.png" width="17px" height="20px">
+          <span style="margin-left: 33px;">&nbsp;&nbsp;
+            <a href="#">Products</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/products/add" class="muli-bold " (click)="closeSideBar();">New Product</a></li>
+          <li><a routerLink="/home/products" class="muli-bold " (click)="closeSideBar();">All Products</a></li>
+        </ul>
+      </li>
+
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon">
+          <img src="../../../assets/img/menu/3.png" width="23px" height="20px">
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Categories</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/categories/add" class="muli-bold " (click)="closeSideBar();"> New Category </a></li>
+          <li><a routerLink="/home/categories" class="muli-bold " (click)="closeSideBar();"> All Categories </a></li>
+        </ul>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon">
+          <img src="../../../assets/img/menu/4.png" width="23px" height="20px"> 
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Sub-Categories</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/sub-categories/add" class="muli-bold " (click)="closeSideBar();"> New Sub-Category </a></li>
+          <li><a routerLink="/home/sub-categories" class="muli-bold " (click)="closeSideBar();">All Sub-Categories </a></li>
+        </ul>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon">
+          <img src="../../../assets/img/menu/5.png" width="23px" height="20px">
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Industries</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/industries/add" class="muli-bold" (click)="closeSideBar();"> New Industry</a></li>
+          <li><a routerLink="/home/industries" class="muli-bold" (click)="closeSideBar();"> All Industries</a></li>
+        </ul>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon" style="margin-left: 20px;">
+          <img src="../../../assets/img/menu/6.png" width="23px" height="20px">
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Groups</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/tags/add" class="muli-bold" (click)="closeSideBar();"> New Group</a></li>
+          <li><a routerLink="/home/tags" class="muli-bold" (click)="closeSideBar();"> All Groups</a></li>
+        </ul>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon" style="margin-left: 22px;">
+          <img src="../../../assets/img/menu/7.png" width="20px" height="20px">
+          <span style="margin-left: 28px;">&nbsp;&nbsp;
+            <a href="#">Certificates</a>
+            </span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/certificates/add" class="muli-bold" (click)="closeSideBar();">New Certificate </a></li>
+          <li><a routerLink="/home/certificates" class="muli-bold" (click)="closeSideBar();"> All Certificates</a></li>
+        </ul>
+      </li>
+
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon"  style="margin-left: 25px;">
+          <img src="../../../assets/img/menu/8.png" width="18px" height="20px">
+          <span style="margin-left: 29px;">&nbsp;&nbsp;
+            <a href="#">Special Offers</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/offers/add" class="muli-bold" (click)="closeSideBar();"> New Offer</a></li>
+          <li><a routerLink="/home/offers" class="muli-bold" (click)="closeSideBar();"> All Offers</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active" (click)="closeSideBar();">
+        <a routerLink="/home/about-us">
+          <div class="icon">
+          <img src="../../../assets/img/menu/9.png" width="26px" height="20px">
+          <span style="margin-left: 25px;">&nbsp;&nbsp;
+            <a href="#">About-Us</a></span>
+        </div>
+        </a>
+      </li>
+
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon">
+          <img src="../../../assets/img/menu/10.png" width="29px" height="20px">
+          <span style="margin-left: 24px;">&nbsp;&nbsp;
+            <a href="#">Users</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/users/add" class="muli-bold" (click)="closeSideBar();"> New User</a></li>
+          <li class="active"><a routerLink="/home/users" class="muli-bold" (click)="closeSideBar();"> All Users</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active" (click)="closeSideBar();">
+        <a routerLink="/home/detail-products">
+          <div class="icon" style="margin-left: 27px;">
+          <img src="../../../assets/img/menu/11.png" width="15px" height="20px">
+          <span style="margin-left: 32px;">&nbsp;&nbsp;
+            <a href="#">Bulk CSV Import</a></span>
+        </div>
+        </a>
+      </li>
+      <li class="treeview" routerLinkActive="active">
+        <a>
+          <div class="icon"  style="margin-left: 25px;">
+          <img src="../../../assets/img/menu/12.png" width="19px" height="20px">
+          <span style="margin-left: 30px;">&nbsp;&nbsp;
+            <a href="#">Settings</a></span>
+        </div>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/home/footer" class="muli-bold" (click)="closeSideBar();"> Footer</a></li>
+          <li><a routerLink="/home/change-password" class="muli-bold" (click)="closeSideBar();"> Change Password</a></li>
+        </ul>
+      </li>
+      <li routerLinkActive="active" (click)="closeSideBar();">
+        <a (click)="logout()">
+          <div class="icon"  style="margin-left: 23px;">
+          <img src="../../../assets/img/menu/13.png" width="26px" height="20px">
+          <span style="margin-left: 25px;">&nbsp;&nbsp;
+            <a href="#">Logout</a></span>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>
